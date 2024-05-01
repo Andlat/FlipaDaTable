@@ -26,6 +26,9 @@ public class TestFlipDaTable {
 
         FlipaDaTable.getInstance().nextState();
         char[] flipped = Hex.encodeHex(FlipaDaTable.flip().getBytes());
+        
+        System.out.println("Expected value:\t" + encoded);
+        System.out.println("Actual value:\t" + new String(flipped));
 
         assertTrue(new String(flipped).equals(encoded));
     }
