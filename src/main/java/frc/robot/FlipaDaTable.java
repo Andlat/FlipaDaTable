@@ -33,7 +33,8 @@ public class FlipaDaTable {
 
     public static String flip(){
         // https://emoticoncentral.com/category/table-flipping
-        // Hello. Nouvelle commit :p 
-        return "┬─┬ノ( º _ ºノ)";
+        if(getInstance().m_state == State.PREPARING )
+            return "┬─┬ノ( º _ ºノ)";
+        return "(╯°□°）╯︵ ┻━┻";
     }
 }
