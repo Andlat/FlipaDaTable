@@ -35,5 +35,6 @@ public class FlipaDaTable {
         // https://emoticoncentral.com/category/table-flipping
 
         return (getInstance().m_state == State.FLIPPING) ? "(╯°□°）╯︵ ┻━┻" : "┬─┬ノ( º _ ºノ)";
+
     }
 }
