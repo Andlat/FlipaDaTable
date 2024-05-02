@@ -19,10 +19,10 @@ public class FlipaDaTable {
     public void nextState(){
         switch (this.m_state) {
             case PREPARING:
-                m_state = State.PREPARING;
+                m_state = State.FLIPPING;
                 break;
             case FLIPPING:
-                m_state = State.FLIPPING;
+                m_state = State.PREPARING;
                 break;
         }
     }
@@ -33,7 +33,7 @@ public class FlipaDaTable {
 
     public static String flip(){
         // https://emoticoncentral.com/category/table-flipping
-        
-        return "┬─┬ノ( º _ ºノ)";
+
+        return (getInstance().m_state == State.FLIPPING) ? "(╯°□°）╯︵ ┻━┻" : "┬─┬ノ( º _ ºノ)";
     }
 }
