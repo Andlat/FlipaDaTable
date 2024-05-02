@@ -19,10 +19,10 @@ public class FlipaDaTable {
     public void nextState(){
         switch (this.m_state) {
             case PREPARING:
-                m_state = State.FLIPPING;
+                m_state = State.PREPARING;
                 break;
             case FLIPPING:
-                m_state = State.PREPARING;
+                m_state = State.FLIPPING;
                 break;
         }
     }
